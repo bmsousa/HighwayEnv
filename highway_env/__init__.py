@@ -117,6 +117,13 @@ def _register_highway_envs():
 
     # u_turn_env.py
     register(id="u-turn-v0", entry_point="highway_env.envs.u_turn_env:UTurnEnv")
+    
+     # vanet_env.py
+    register(
+        id="VanetHighEnv-v0", 
+        entry_point="highway_env.envs.vanet_env:VanetHighEnv",
+        max_episode_steps=1000,
+    )
 
 
 _register_highway_envs()
